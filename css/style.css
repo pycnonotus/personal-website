@@ -1,49 +1,89 @@
-.sushi{
-    padding-top: 200px;
-    background-color: #e4f9f5;
-    }
-body{
+body {
     margin: 0;
-    text-align: center;
-    }
-h1{
+    background-color: #e4f9f5;
+
+}
+
+h1 {
     font-size: 5.625em;
     margin-top: 0;
     margin: 0 auto;
     color: #66BFBF;
     font-family: "Gill Sans Extrabold", sans-serif;
-    }
-h2{
+}
+
+h2 {
     font-size: 2.8125em;
     color: #66BFBF;
     font-weight: normal;
     font-family: fangsong;
 }
-h3{
+
+h3 {
     color: #11999E;
 }
-.underline{
+
+.underline {
     position: center;
 }
-.left-cloud{
-    object-fit: cover;
-    max-height: 100px;
 
-}
-.right-cloud{
-    object-fit: cover;
-    max-height: 100px;
-}
-.mountain{
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    top: 4px;
-}
-.footer-link{
+.footer-link {
     color: #11999E;
 }
-.title-wrap{
+
+.header {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-wrap {
+    --height: 500px;
+    width: 100%;
+    position: absolute;
+    top: var(--height);
+    z-index: -2;
+    overflow: hidden;
+    height: var(--height);
+
+}
+
+.img-wrap .mountain {
+    width: 100%;
+}
+
+.cloud {
+    width: 1px;
+    height: 1px;
+    overflow: visible;
+    position: relative;
+    z-index: -1;
+}
+
+.cloud>img {
+    width: 500px;
+    position: absolute;
+}
+
+.left-cloud {
+    top: 50px;
+    object-fit: cover;
+    left: 50px;
+
+}
+
+.right-cloud {
+    bottom: 20px;
+    object-fit: cover;
+    right: 50px;
+}
+
+.title-wrap {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
